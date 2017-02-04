@@ -7,7 +7,7 @@ import { Route, Redirect } from 'react-router-dom'
 
 const store = createStore(reducer)
 
-const App1 = ({path}) => {
+const AppWrapper = ({path}) => {
 	return (
 		<Provider store={store}>
             <div>
@@ -21,4 +21,4 @@ const App1 = ({path}) => {
 	)
 }
 
-export default App1
+export default AppWrapper
