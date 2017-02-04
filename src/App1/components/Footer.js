@@ -60,7 +60,6 @@ export default class Footer extends Component {
 	}
 
 	render() {
-		console.log(this.getPathName())
 		return (
 			<footer className="footer">
 				{this.renderTodoCount()}
