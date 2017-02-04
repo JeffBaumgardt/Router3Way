@@ -40,7 +40,6 @@ export default class Footer extends Component {
 		const title = FILTER_TITLES[filter]
 		const { filter: selectedFilter } = this.props
         const appName = this.getPathName().slice(0, this.getPathName().lastIndexOf('/'))
-
 		return (
 			<Link className={classnames({ selected: filter === selectedFilter })}
 				style={{ cursor: 'pointer' }}
@@ -61,6 +60,7 @@ export default class Footer extends Component {
 	}
 
 	render() {
+		console.log(this.getPathName())
 		return (
 			<footer className="footer">
 				{this.renderTodoCount()}
